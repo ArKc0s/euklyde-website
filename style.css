@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow-x: hidden;
+    
+
+
+}
+
+
+
+.body-container {
+    margin: auto;
+    width: 100vw;
+    height: 500vh;
+ 
+}
+
+.header-container {
+
+
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  
+    margin: auto;
+    position: relative;
+    top: 0px;   
+   
+
+    background-color: #24243e;
+    background-image:
+    radial-gradient(ellipse at 10% 90%, #0f0c29 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 90%, #1c225e 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 10%, #151945 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 10%, #24243e 0%, transparent 55%);
+
+
+    background-size:inherit;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.24);
+   
+
+
+}
+
+.header {
+    border: red 2px solid;
+ 
+  
+}
+
+.main-container {
+
+    margin: auto;
+
+    display: grid;
+    border: red 2px solid;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.main-text {
+
+    grid-column: 1 /span 2;
+    grid-row: 1;
+    
+
+
+}
+
+.main-button-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main-button-right {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
