@@ -11,29 +11,63 @@ body {
     background: white;
     overflow-x: hidden;
     width: 100vw;
-
-
 }
 
 
 .flex-column {
-
     display: flex;
     flex-direction: column;
+}
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .grid {
     display: grid;
 }
 
-.bg-slide-container {
+.header-container {
+    align-items: center;
+    position: 0 0;
+    width: 100vw;
+}
 
+.header-logo-text {
+
+    width: 20%;
+    font-size: 0.8rem;
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    padding-left: 1vw;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 2vw;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 2vw;
+    font-size: 0.92rem;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+  
+
+}
+
+.bg-slide-container {
     width: 100vw;
     height: 100vh;
     margin: auto;
     top: 0px;   
-   
 
     background-color: #24243e;
     background-image:
@@ -42,38 +76,23 @@ body {
     radial-gradient(ellipse at 90% 10%, #151945 0%, transparent 55%),
     radial-gradient(ellipse at 10% 10%, #24243e 0%, transparent 55%);
 
-
     background-size:inherit;
     background-position-y: bottom;
     background-position-x: center;
     background-repeat: repeat-y;
-
 }
 
-.shadowed {
+.shadowed-slide {
     box-shadow: 1px 4px 6px 1px rgba(0,0,0,0.24);
 }
 
 .white-slide-container {
 
     border: 1px solid red;
-
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
-   
-    top: 0px;   
-
-
-}
-
-.header {
-   
-    font-size: 0.8rem;
-    font-family: "Poppins", "sans-serif";
-    color: white;
-    padding-left: 1vw;
-    
+    top: 0px;  
 }
 
 .main-container {
@@ -125,9 +144,7 @@ body {
 }
 
 .slide-btn {
-
     width: 230px;
-   
     border-radius: 30px;
     background-color: transparent;
     font-size: 1rem;
@@ -136,7 +153,7 @@ body {
     color: white;
     padding: 1vh 2vw;
     text-align: center;
-
+    cursor: pointer;
 }
 
 .outline-white {
