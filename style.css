@@ -193,7 +193,7 @@ body {
 }
 
 .s-image-bg {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.048)),
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.048)),
     url("./assets/backgrounds/macbook-bg.jpg"); 
     background-position-y: center;
     background-position-x: center;
@@ -282,23 +282,77 @@ body {
 
 .p-det-container {
     width: 100vw;
+    height: 85vh;
     margin: 0;
-    border: red 2px solid;
-    grid-template-rows: 40% 10% 30% 20%;
-    
+    grid-template-rows: 40% 6% 4% 20% 30%;
 }
 
 .p-det-img {
     align-self: end;
     padding: 0% 8%;
+    margin-bottom: 1%;
     grid-row: 1;
     border-radius: 100%;
-    width: 7vw;
+    width: 12vh;
     
 }
 
 .p-det-name {
     align-self: center;
     grid-row: 2;
-    padding: 0% 8%; 
+    padding: 0% 8.5%; 
 }
+
+.p-det-rank {
+    align-self: center;
+    grid-row: 3;
+    padding: 0% 8.5%; 
+}
+
+.p-det-desc {
+    width: 25vw;
+    align-self: center;
+    grid-row: 4;
+    padding: 0% 8.5%; 
+}
+
+.p-det-socials {
+    grid-row: 5;
+    padding: 0% 8.5%; 
+    align-self: center;
+}
+
+.p-det-social {
+    margin-right: 1%;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 1vh;
+    font-size: 1.4rem;
+    color: white;
+}
+
+@media only screen and (max-width: 1737px) {
+    .p-det-desc {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .p-det-desc {
+        width: 55vw;
+    }
+}
+
+@media only screen and (max-width: 787px) {
+    .p-det-desc {
+        width: 75vw;
+    }
+}
+
+@media only screen and (aspect-ratio < 1/1) {
+    .p-det-desc {
+        width: 80vw;
+        height: 100%;
+    }
+}
+
