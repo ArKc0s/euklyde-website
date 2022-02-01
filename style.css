@@ -144,6 +144,10 @@ body {
     cursor: pointer;
 }
 
+.navbar .a {
+    text-decoration: none;
+}
+
 /* SECTION GENERAL CLASSES */
 
 .section-100-100 {
@@ -284,7 +288,7 @@ body {
     width: 100vw;
     height: 85vh;
     margin: 0;
-    grid-template-rows: 40% 6% 4% 20% 30%;
+    grid-template-rows: 40% 6% 4% 30% 20%;
 }
 
 .p-det-img {
@@ -345,11 +349,47 @@ body {
 
 @media only screen and (max-width: 787px) {
     .p-det-desc {
-        width: 75vw;
+        width: 80vw;
     }
 }
 
 @media only screen and (aspect-ratio < 1/1) {
+
+    .navbar ul li {
+        font-size: 0.7rem;
+    }
+
+    .main-body {
+        grid-template-rows: 60% 10% 30%;
+    }
+
+    .main-text {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+        text-align: center;
+        align-self: center;
+    }
+
+    .main-btn-left {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+   
+    }
+    
+    .main-btn-right {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        align-self: start;
+        margin-top: 3vh;
+        justify-self: center;
+     
+    }
+
     .p-det-desc {
         width: 80vw;
         height: 100%;
