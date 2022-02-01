@@ -64,7 +64,6 @@ body {
     color: #261e35;
 }
 
-
 /* BORDERS */
 
 .br-white-2 {
@@ -74,7 +73,6 @@ body {
 .br-black-2 {
     border : 2px solid black;
 }
-
 
 /* BG COLORS */
 .bg-black {
@@ -104,6 +102,11 @@ body {
 .g-2r-20-80 {
     display: grid;
     grid-template-rows: 0.2fr auto;  
+}
+
+.g-2c-20-80 {
+    display: grid;
+    grid-template-columns: 0.2fr auto;  
 }
 
 .g-r1-c1 {
@@ -190,7 +193,6 @@ body {
 }
 
 .s-image-bg {
-    border: 2px solid red;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.048)),
     url("./assets/backgrounds/macbook-bg.jpg"); 
     background-position-y: center;
@@ -262,7 +264,6 @@ body {
     align-self: center;
     justify-self: center;
     margin: 5% 5%;
-    border-radius: 200%;
 }
 
 .knowledge-title {
@@ -275,4 +276,29 @@ body {
     grid-row: 3;
     align-self: center;
     padding: 0 2%;
+}
+
+/* IMAGE SECTION */
+
+.p-det-container {
+    width: 100vw;
+    margin: 0;
+    border: red 2px solid;
+    grid-template-rows: 40% 10% 30% 20%;
+    
+}
+
+.p-det-img {
+    align-self: end;
+    padding: 0% 8%;
+    grid-row: 1;
+    border-radius: 100%;
+    width: 7vw;
+    
+}
+
+.p-det-name {
+    align-self: center;
+    grid-row: 2;
+    padding: 0% 8%; 
 }
