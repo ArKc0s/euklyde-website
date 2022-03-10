@@ -50,6 +50,10 @@ body {
     font-size: 1rem;
 }
 
+.f-size-2 {
+    font-size: 2rem;
+}
+
 .f-size-4 {
     font-size: 4rem;
 }
@@ -64,6 +68,9 @@ body {
     color: #261e35;
 }
 
+.c-light-purple {
+    color: #261e35be;
+}
 /* BORDERS */
 
 .br-white-2 {
@@ -333,6 +340,20 @@ body {
     padding: 1vh;
     font-size: 1.4rem;
     color: white;
+}
+
+.navfolio {
+    width: 100vw;
+    display: flex;
+    justify-items: stretch;
+}
+
+.navfolio a {
+    text-decoration: none;
+    padding: 20px 0vw;
+    text-align: center;
+    width: 25vw;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1737px) {
