@@ -14,6 +14,11 @@ body {
     width: 100vw;
 }
 
+.not-visible{
+    display: none;
+    visibility: hidden;
+}
+
 /* MARGINS */
 
 .mb-0 {
@@ -69,7 +74,7 @@ body {
 }
 
 .c-light-purple {
-    color: #261e35be;
+    color: #261e35ab;
 }
 /* BORDERS */
 
@@ -79,6 +84,10 @@ body {
 
 .br-black-2 {
     border : 2px solid black;
+}
+
+.br-purple-2 {
+    border : 2px solid #261e35;
 }
 
 /* BG COLORS */
@@ -343,17 +352,153 @@ body {
 }
 
 .navfolio {
-    width: 100vw;
+    width: 64vw;
     display: flex;
     justify-items: stretch;
+    margin: 0 16vw;
+    font-size: 1rem;
 }
 
 .navfolio a {
+    overflow: hidden;
     text-decoration: none;
-    padding: 20px 0vw;
+    padding: 20px 1vw;
     text-align: center;
-    width: 25vw;
+    width: 16vw;
     cursor: pointer;
+}
+
+.slide {
+    padding-top: 2.5vh;
+    width: 100vw;
+    height: 77vh;
+}
+
+.project-body {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 28vh 4vh 15vh 10vh 20vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    animation: fade-in ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.project-body.animation-lock{
+    animation: none;
+}
+
+.project-img-container {
+    grid-area: 1 / 1 / 6 / 2;
+    background-image: url("./assets/portfolio/4.png"); 
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.project-logo-container {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.project-logo {
+    align-self: end;
+    margin-top: 13.5vh;
+    padding: 0% 8%;
+    border-radius: 38%;
+    width: 12vh;
+}
+
+.project-title-container {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.4rem;
+    padding: 0% 9%;
+}
+
+.project-desc-container {
+    grid-area: 3 / 2 / 4 / 3;
+    padding: 1% 9%;
+}
+
+.project-button-container {
+    grid-area: 4 / 2 / 5 / 3;
+    padding: 1% 8%;
+}
+
+.project-links-container {
+    grid-area: 5 / 2 / 6 / 3;
+    padding: 1% 8%;
+}
+
+.project-link {
+    margin-right: 1%;
+    border: 1px solid #261e35;
+    border-radius: 100%;
+    padding: 1vh;
+    font-size: 1.4rem;
+    color: #261e35;
+    
+}
+
+
+
+@media only screen and (max-width: 1145px) {
+
+    .project-body {
+        position: absolute;
+        left: 15vw;
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows: 14vh 4vh 34vh 10vh 15vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        animation: fade-in ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .project-img-container {
+        opacity: 0;
+    }
+    
+    
+    .project-logo-container {
+        grid-area: 1 / 1 / 2 / 2;;
+    }
+    
+    .project-logo {
+        align-self: end;
+        margin-top: 0vh;
+        padding: 0% 8%;
+        border-radius: 38%;
+        width: 12vh;
+    }
+    
+    .project-title-container {
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 1.4rem;
+        padding: 0% 9%;
+    }
+    
+    .project-desc-container {
+        grid-area: 3 / 1 / 4 / 2;
+        padding: 1% 9%;
+    }
+    
+    .project-button-container {
+        grid-area: 4 / 1 / 5 / 2;
+        padding: 1% 8%;
+    }
+    
+    .project-links-container {
+        grid-area: 5 / 1 / 6 / 2;
+        padding: 1% 8%;
+    }
+    
 }
 
 @media only screen and (max-width: 1737px) {
@@ -365,6 +510,28 @@ body {
 @media only screen and (max-width: 1240px) {
     .p-det-desc {
         width: 55vw;
+    }
+}
+
+@media only screen and (max-width: 925px) {
+
+    .navfolio {
+        width: 64vw;
+        display: flex;
+        justify-items: stretch;
+        margin: 0 16vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+
+    .navfolio {
+        width: 64vw;
+        display: flex;
+        justify-items: stretch;
+        margin: 0 16vw;
+        font-size: 0.7rem;
     }
 }
 
@@ -417,3 +584,11 @@ body {
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
